@@ -1,5 +1,5 @@
 *** Settings ***
-Library           AppiumLibrary
+Resource          helpers.robot
 
 *** Keywords ***
 Open Session
