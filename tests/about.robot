@@ -42,21 +42,14 @@ Deve Apresentar Os Elementos
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-button-update       
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-button-logout      
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-text-version
-
-Deve conter textos em portugues
-
-    CLick Element                       id=com.ikatec.digisac:id/about-button-portuguese
-    Element Text Should Be              id=com.ikatec.digisac:id/about-button-update                            Atualizar Digisac
-    Element Text Should Be              id=com.ikatec.digisac:id/about-button-logout                            Sair
-    Element Text Should Be              id=com.ikatec.digisac:id/about-text-version                             Versão
-
-Deve conter textos em ingles
-
-    CLick Element                       id=com.ikatec.digisac:id/about-button-portuguese
-    Element Text Should Be              id=com.ikatec.digisac:id/about-button-update                            Update Digisac
-    Element Text Should Be              id=com.ikatec.digisac:id/about-button-logout                            Logout
-    Element Text Should Be              id=com.ikatec.digisac:id/about-text-version                             version
-
-Deve deslogar
-
-    CLick Element                       id=com.ikatec.digisac:id/about-button-logout
+    Click Element                       id=com.ikatec.digisac:id/about-button-portuguese
+    Wait Until Page Contains            Nome
+    Text Should Be Visible              Atualizar Digisac
+    Text Should Be Visible              Sair
+    Text Should Be Visible              Versão
+    Click Element                       id=com.ikatec.digisac:id/about-button-english
+    Wait Until Page Contains            Name
+    Text Should Be Visible              Update Digisac
+    Text Should Be Visible              Logout
+    Text Should Be Visible              Version
+    Click Element                       id=com.ikatec.digisac:id/about-button-logout
