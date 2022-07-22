@@ -4,23 +4,61 @@ Library    AppiumLibrary
 *** Variables ***
     #Login
 ${LOGO}             id=com.ikatec.digisac:id/workspace-logo
-${INPUT_URL}        accessibility_id=com.ikatec.digisac:id/workspace-input-url
-${BTN_CONNECT}      id=com.ikatec.digisac:id/workspace-button-connect
 ${LOGO_LOGIN}       id=com.ikatec.digisac:id/login-logo
-${BTN_LOGIN}        id=com.ikatec.digisac:id/login-button-login
 ${LOGO_HEADER}      id=com.ikatec.digisac:id/header-logo
+${INPUT_URL}        accessibility_id=com.ikatec.digisac:id/workspace-input-url
+${INPUT_EMAIL}      accessibility_id=com.ikatec.digisac:id/login-input-email
+${INPUT_PASSWORD}   accessibility_id=com.ikatec.digisac:id/login-input-password
+${BTN_CONNECT}      id=com.ikatec.digisac:id/workspace-button-connect
+${BTN_PT}           id=com.ikatec.digisac:id/workspace-button-portuguese
+${BTN_EN}           id=com.ikatec.digisac:id/workspace-button-english
+${BTN_LOGIN}        id=com.ikatec.digisac:id/login-button-login
+${URL}              qa6.digisac.co
+${LOGIN}            automacao@automacao.com
+${PASSWORD}         0123
 
 *** Keywords ***
 
-Get Started
+Get Started Portuguese
 
-    Wait Until Page Contains            ${LOGO}
-    Input Text                          ${INPUT_URL}        qa6.digisac.co
-    Click Element                       ${BTN_CONNECT}
-    Wait Until Page Contains            ${LOGO_LOGIN}
-    Input Text                          ${INPUT_URL}        automacao@automacao.com
-    Input Password                      ${INPUT_URL}        0123
-    Click Element                       ${BTN_LOGIN}
-    Wait Until Page Contains            ${LOGO_HEADER}           
+    Wait Until Element Is Visible                 ${LOGO}
+    Click Element                                 ${BTN_PT}
+    Click Element                                 ${INPUT_URL}
+    Input Text                                    ${INPUT_URL}              ${URL}
+    Click Element                                 ${LOGO} 
+    Wait Until Element Is Visible                 ${BTN_CONNECT}
+    Click Element                                 ${BTN_CONNECT}
+    Wait Until Element Is Visible                 ${LOGO_LOGIN}
+    Click Element                                 ${INPUT_EMAIL}
+    Input Text                                    ${INPUT_EMAIL}           ${LOGIN}
+    Click Element                                 ${LOGO_LOGIN} 
+    Wait Until Element Is Visible                 ${INPUT_PASSWORD}
+    Click Element                                 ${INPUT_PASSWORD}
+    Input Password                                ${INPUT_PASSWORD}        ${PASSWORD} 
+    Click Element                                 ${LOGO_LOGIN} 
+    Wait Until Element Is Visible                 ${BTN_LOGIN}
+    Click Element                                 ${BTN_LOGIN}
+    Wait Until Element Is Visible                 ${LOGO_HEADER}           
+
+Get Started English
+
+    Wait Until Element Is Visible                 ${LOGO}
+    Click Element                                 ${BTN_EN}
+    Click Element                                 ${INPUT_URL}
+    Input Text                                    ${INPUT_URL}              ${URL}
+    Click Element                                 ${LOGO} 
+    Wait Until Element Is Visible                 ${BTN_CONNECT}
+    Click Element                                 ${BTN_CONNECT}
+    Wait Until Element Is Visible                 ${LOGO_LOGIN}
+    Click Element                                 ${INPUT_EMAIL}
+    Input Text                                    ${INPUT_EMAIL}           ${LOGIN}
+    Click Element                                 ${LOGO_LOGIN} 
+    Wait Until Element Is Visible                 ${INPUT_PASSWORD}
+    Click Element                                 ${INPUT_PASSWORD}
+    Input Password                                ${INPUT_PASSWORD}        ${PASSWORD} 
+    Click Element                                 ${LOGO_LOGIN} 
+    Wait Until Element Is Visible                 ${BTN_LOGIN}
+    Click Element                                 ${BTN_LOGIN}
+    Wait Until Element Is Visible                 ${LOGO_HEADER}   
 
 
