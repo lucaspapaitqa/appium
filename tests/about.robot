@@ -28,6 +28,7 @@ Deve Apresentar Os Elementos
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/header-button-navigate_to_about
     Click Element                       id=com.ikatec.digisac:id/header-button-navigate_to_about
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-logo
+    Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-icon-moon
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-text-api_label
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-text-api
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-text-front_label
@@ -41,3 +42,21 @@ Deve Apresentar Os Elementos
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-button-update       
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-button-logout      
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/about-text-version
+
+Deve conter textos em portugues
+
+    CLick Element                       id=com.ikatec.digisac:id/about-button-portuguese
+    Element Text Should Be              id=com.ikatec.digisac:id/about-button-update                            Atualizar Digisac
+    Element Text Should Be              id=com.ikatec.digisac:id/about-button-logout                            Sair
+    Element Text Should Be              id=com.ikatec.digisac:id/about-text-version                             Versão
+
+Deve conter textos em ingles
+
+    CLick Element                       id=com.ikatec.digisac:id/about-button-portuguese
+    Element Text Should Be              id=com.ikatec.digisac:id/about-button-update                            Update Digisac
+    Element Text Should Be              id=com.ikatec.digisac:id/about-button-logout                            Logout
+    Element Text Should Be              id=com.ikatec.digisac:id/about-text-version                             version
+
+Deve deslogar
+
+    CLick Element                       id=com.ikatec.digisac:id/about-button-logout
