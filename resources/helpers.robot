@@ -56,7 +56,8 @@ Get Started English
     Wait Until Element Is Visible                 ${INPUT_PASSWORD}
     Click Element                                 ${INPUT_PASSWORD}
     Input Password                                ${INPUT_PASSWORD}        ${PASSWORD} 
-    Click Element                                 ${LOGO_LOGIN} 
+    Click Element                                 ${LOGO_LOGIN}
+    Click Element                                 ${BTN_PT}
     Wait Until Element Is Visible                 ${BTN_LOGIN}
     Click Element                                 ${BTN_LOGIN}
     Wait Until Element Is Visible                 ${LOGO_HEADER}   
