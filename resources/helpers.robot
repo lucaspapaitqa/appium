@@ -13,6 +13,7 @@ ${BTN_CONNECT}      id=com.ikatec.digisac:id/workspace-button-connect
 ${BTN_PT}           id=com.ikatec.digisac:id/workspace-button-portuguese
 ${BTN_EN}           id=com.ikatec.digisac:id/workspace-button-english
 ${BTN_LOGIN}        id=com.ikatec.digisac:id/login-button-login
+${TEXT_UPDATE}      id=com.ikatec.digisac:id/workspace-text-update
 ${URL}              qa6.digisac.co
 ${LOGIN}            automacao@automacao.com
 ${PASSWORD}         0123
@@ -21,8 +22,10 @@ ${PASSWORD}         0123
 
 Get Started Portuguese
 
-    Wait Until Element Is Visible                 ${LOGO}
+    Wait Until Page Does Not Contain Element      ${TEXT_UPDATE}
+    Wait Until Element Is Visible                 ${BTN_PT}
     Click Element                                 ${BTN_PT}
+    Wait Until Page Does Not Contain Element      ${TEXT_UPDATE}
     Click Element                                 ${INPUT_URL}
     Input Text                                    ${INPUT_URL}              ${URL}
     Click Element                                 ${LOGO} 
