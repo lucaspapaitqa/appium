@@ -23,6 +23,8 @@ ${PASSWORD}         0123
 Get Started Portuguese
 
     Wait Until Page Does Not Contain Element      ${TEXT_UPDATE}
+    Wait Until Page Does Not Contain              Looking for updates...
+    Wait Until Page Does Not Contain              Procurando atualizações...
     Wait Until Element Is Visible                 ${BTN_PT}
     Click Element                                 ${BTN_PT}
     Wait Until Page Does Not Contain Element      ${TEXT_UPDATE}

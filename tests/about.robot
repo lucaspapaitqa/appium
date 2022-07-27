@@ -46,7 +46,8 @@ Present The Elements
     Wait Until Element Is Visible           ${VERSION_TEXT}  
 
 
-Mudar de tema
+Change Theme
+
 
     Get Started Portuguese
     Click Element                           ${LOGO_HEADER} 
@@ -57,7 +58,7 @@ Mudar de tema
     Wait Until Element Is Visible           ${MOON_ICO}
 
 
-Mudança De Idioma
+Language Change
 
     Get Started Portuguese
     Click Element                           ${LOGO_HEADER} 
@@ -69,7 +70,7 @@ Mudança De Idioma
     Text Should Be Visible                  Sair
     Text Should Be Visible                  Versão
     Click Element                           ${TEXT_EN}
-    Text Should Be Visible                  Name
+    Wait Until Page Contains                Name :
     Text Should Be Visible                  Update Digisac
     Text Should Be Visible                  Logout
     Text Should Be Visible                  Version
