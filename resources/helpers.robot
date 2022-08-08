@@ -18,12 +18,16 @@ ${URL}              qa6.digisac.co
 ${LOGIN}            automacao@automacao.com
 ${PASSWORD}         0123
 #Header
-${HEADER_TITLE}          id=com.ikatec.digisac:id/header-text-title
-${SEARCH_SVG}            id=com.ikatec.digisac:id/header-svg-search
-${INPUT_SEARCH}          accessibility_id=com.ikatec.digisac:id/header-input-search   
-${BTN_SEARCH}            id=id=com.ikatec.digisac:id/header-button-search
-${BTN_HEADER_CANCEL}     id=id=com.ikatec.digisac:id/header-button-cancel
-${TEXT_HEADER_CANCEL}    com.ikatec.digisac:id/header-text-cancel
+
+${HEADER}                     id=com.ikatec.digisac:id/header
+${HEADER_TITLE_PT}            id=com.ikatec.digisac:id/header_text_Contatos
+${HEADER_TITLE_EN}            id=com.ikatec.digisac:id/header_text_Contacts
+${BTN_SEARCH}                 id=com.ikatec.digisac:id/header_button_search
+${SEARCH_SVG}                 id=com.ikatec.digisac:id/header_svg_search
+${BTN_HEADER_CANCEL}          id=com.ikatec.digisac:id/header_button_cancel
+${TEXT_HEADER_CANCEL}         id=com.ikatec.digisac:id/header_text_cancel
+${INPUT_SEARCH}               accessibility_id=com.ikatec.digisac:id/header_input_search 
+
 #Tab
 ${BTN_CHAT}              id=com.ikatec.digisac:id/tab_bar-button-ChatsScreen
 ${TEXT_CHAT}             id=com.ikatec.digisac:id/tab_bar-Chats
@@ -31,6 +35,9 @@ ${BTN_QUEUE}             id=com.ikatec.digisac:id/tab_bar-button-QueueScreen
 ${TEXT_QUEUE}            id=com.ikatec.digisac:id/tab_bar-Queue
 ${BTN_CONTACTS}          id=com.ikatec.digisac:id/tab_bar-button-ContactsScreen
 ${TEXT_CONTACTS}         id=com.ikatec.digisac:id/tab_bar-Contacts
+
+## Picker
+${SELECT_PICKER}                        id=com.ikatec.digisac:id/modal_select_picker
 
 *** Keywords ***
 Get Started Portuguese
@@ -83,4 +90,14 @@ Get Started English
     Click Element                                 ${BTN_LOGIN}
     Wait Until Element Is Visible                 ${LOGO_HEADER}      
 
+
+Wait Until Page Contains Picker Text
+    [Arguments]             ${target}
+
+    Wait Until Page Contains   ${target}
+
+Wait Until The Picker Element Is Visible
+    [Arguments]             ${target}
+
+    Wait Until Element Is Visible           xpath=//android.widget.TextView[contains(@text, '${target}')]
 
