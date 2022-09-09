@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on linux)" generated="20220909 09:32:41.359" rpa="false" schemaversion="3">
+<suite id="s1" name="addContacts" source="/home/nilo/Documentos/digisac-qa/appium/tests/addContacts.robot">
+<test id="s1-t1" name="Deve Apresentar Os Elementos" line="8">
+<kw name="Open Session" library="base" type="SETUP">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>40</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20220909 09:32:41.528" endtime="20220909 09:32:41.529"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>app=${EXECDIR}/app/digisac.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220909 09:32:41.529" endtime="20220909 09:32:49.824"/>
+</kw>
+<status status="PASS" starttime="20220909 09:32:41.528" endtime="20220909 09:32:49.824"/>
+</kw>
+<kw name="Get Started Portuguese" library="helpers">
+<kw name="Wait Until Page Does Not Contain Element" library="AppiumLibrary">
+<arg>${TEXT_UPDATE}</arg>
+<doc>Waits until element specified with `locator` disappears from current page.</doc>
+<status status="PASS" starttime="20220909 09:32:49.837" endtime="20220909 09:32:50.132"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain" library="AppiumLibrary">
+<arg>Looking for updates...</arg>
+<doc>Waits until `text` disappears from current page.</doc>
+<status status="PASS" starttime="20220909 09:32:50.132" endtime="20220909 09:32:50.248"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain" library="AppiumLibrary">
+<arg>Procurando atualizações...</arg>
+<doc>Waits until `text` disappears from current page.</doc>
+<status status="PASS" starttime="20220909 09:32:50.249" endtime="20220909 09:32:50.371"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="AppiumLibrary">
+<arg>${TEXT_UPDATE}</arg>
+<doc>Waits until element specified with `locator` disappears from current page.</doc>
+<status status="PASS" starttime="20220909 09:32:50.372" endtime="20220909 09:32:50.424"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BTN_PT}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:32:50.424" endtime="20220909 09:32:56.658"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BTN_PT}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220909 09:32:56.666" level="INFO">Clicking element 'id=com.ikatec.digisac:id/workspace-button-portuguese'.</msg>
+<status status="PASS" starttime="20220909 09:32:56.658" endtime="20220909 09:32:56.764"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="AppiumLibrary">
+<arg>${TEXT_UPDATE}</arg>
+<doc>Waits until element specified with `locator` disappears from current page.</doc>
+<status status="PASS" starttime="20220909 09:32:56.765" endtime="20220909 09:32:56.813"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${INPUT_URL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220909 09:32:56.819" level="INFO">Clicking element 'accessibility_id=com.ikatec.digisac:id/workspace-input-url'.</msg>
+<status status="PASS" starttime="20220909 09:32:56.813" endtime="20220909 09:32:58.518"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${INPUT_URL}</arg>
+<arg>${URL}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220909 09:32:58.526" level="INFO">Typing text 'qa6.digisac.co' into text field 'accessibility_id=com.ikatec.digisac:id/workspace-input-url'</msg>
+<status status="PASS" starttime="20220909 09:32:58.518" endtime="20220909 09:32:59.303"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${LOGO}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220909 09:32:59.310" level="INFO">Clicking element 'id=com.ikatec.digisac:id/workspace-logo'.</msg>
+<status status="PASS" starttime="20220909 09:32:59.304" endtime="20220909 09:32:59.979"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BTN_CONNECT}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:32:59.980" endtime="20220909 09:33:00.682"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BTN_CONNECT}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:00.689" level="INFO">Clicking element 'id=com.ikatec.digisac:id/workspace-button-connect'.</msg>
+<status status="PASS" starttime="20220909 09:33:00.682" endtime="20220909 09:33:00.781"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${LOGO_LOGIN}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:00.781" endtime="20220909 09:33:02.900"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${INPUT_EMAIL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:02.905" level="INFO">Clicking element 'accessibility_id=com.ikatec.digisac:id/login-input-email'.</msg>
+<status status="PASS" starttime="20220909 09:33:02.900" endtime="20220909 09:33:03.926"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${INPUT_EMAIL}</arg>
+<arg>${LOGIN}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:03.932" level="INFO">Typing text 'automacao@automacao.com' into text field 'accessibility_id=com.ikatec.digisac:id/login-input-email'</msg>
+<status status="PASS" starttime="20220909 09:33:03.926" endtime="20220909 09:33:04.696"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${LOGO_LOGIN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:04.702" level="INFO">Clicking element 'id=com.ikatec.digisac:id/login-logo'.</msg>
+<status status="PASS" starttime="20220909 09:33:04.697" endtime="20220909 09:33:05.468"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${INPUT_PASSWORD}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:05.468" endtime="20220909 09:33:06.218"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${INPUT_PASSWORD}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:06.225" level="INFO">Clicking element 'accessibility_id=com.ikatec.digisac:id/login-input-password'.</msg>
+<status status="PASS" starttime="20220909 09:33:06.218" endtime="20220909 09:33:07.253"/>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>${INPUT_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:07.261" level="INFO">Typing password into text field 'accessibility_id=com.ikatec.digisac:id/login-input-password'</msg>
+<status status="PASS" starttime="20220909 09:33:07.254" endtime="20220909 09:33:08.005"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${LOGO_LOGIN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:08.011" level="INFO">Clicking element 'id=com.ikatec.digisac:id/login-logo'.</msg>
+<status status="PASS" starttime="20220909 09:33:08.006" endtime="20220909 09:33:08.577"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:08.577" endtime="20220909 09:33:09.346"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:09.352" level="INFO">Clicking element 'id=com.ikatec.digisac:id/login-button-login'.</msg>
+<status status="PASS" starttime="20220909 09:33:09.347" endtime="20220909 09:33:09.469"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${LOGO_HEADER}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:09.470" endtime="20220909 09:33:13.513"/>
+</kw>
+<status status="PASS" starttime="20220909 09:32:49.825" endtime="20220909 09:33:13.514"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.ikatec.digisac:id/contacts-button-create_contact</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:13.514" endtime="20220909 09:33:13.620"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.ikatec.digisac:id/contacts-button-create_contact</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:13.625" level="INFO">Clicking element 'id=com.ikatec.digisac:id/contacts-button-create_contact'.</msg>
+<status status="PASS" starttime="20220909 09:33:13.620" endtime="20220909 09:33:13.748"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.ikatec.digisac:id/add_contact-text-title</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:13.748" endtime="20220909 09:33:15.030"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=com.ikatec.digisac:id/add_contact-input-internal_name</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:15.031" endtime="20220909 09:33:15.103"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=com.ikatec.digisac:id/add-contact_input_name</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:15.104" endtime="20220909 09:33:15.986"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=com.ikatec.digisac:id/add-contact_input_alternative-name</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:15.987" endtime="20220909 09:33:16.060"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=com.ikatec.digisac:id/add_contact-input-number</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:16.061" endtime="20220909 09:33:16.126"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=com.ikatec.digisac:id/add_contact-input-note</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:16.127" endtime="20220909 09:33:16.191"/>
+</kw>
+<kw name="Text Should Be Visible" library="AppiumLibrary">
+<arg>Novo contato</arg>
+<doc>Verifies that element identified with text is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:16.192" endtime="20220909 09:33:16.559"/>
+</kw>
+<kw name="Text Should Be Visible" library="AppiumLibrary">
+<arg>Cadastrar contato</arg>
+<doc>Verifies that element identified with text is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:16.559" endtime="20220909 09:33:16.684"/>
+</kw>
+<kw name="Text Should Be Visible" library="AppiumLibrary">
+<arg>Nome no DigiSac</arg>
+<doc>Verifies that element identified with text is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:16.685" endtime="20220909 09:33:16.825"/>
+</kw>
+<kw name="Text Should Be Visible" library="AppiumLibrary">
+<arg>Nome no perfil</arg>
+<doc>Verifies that element identified with text is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:16.826" endtime="20220909 09:33:16.988"/>
+</kw>
+<kw name="Text Should Be Visible" library="AppiumLibrary">
+<arg>Nome na agenda do aparelho</arg>
+<doc>Verifies that element identified with text is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:16.988" endtime="20220909 09:33:17.109"/>
+</kw>
+<kw name="Text Should Be Visible" library="AppiumLibrary">
+<arg>Selecione a conexão</arg>
+<doc>Verifies that element identified with text is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:17.109" endtime="20220909 09:33:17.236"/>
+</kw>
+<kw name="Text Should Be Visible" library="AppiumLibrary">
+<arg>Selecione a tag</arg>
+<doc>Verifies that element identified with text is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:17.237" endtime="20220909 09:33:17.353"/>
+</kw>
+<kw name="Text Should Be Visible" library="AppiumLibrary">
+<arg>Adicione uma observação...</arg>
+<doc>Verifies that element identified with text is visible.</doc>
+<status status="PASS" starttime="20220909 09:33:17.354" endtime="20220909 09:33:17.476"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>accessibility_id=com.ikatec.digisac:id/add_contact-input-internal_name</arg>
+<arg>Teste</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:17.484" level="INFO">Typing text 'Teste' into text field 'accessibility_id=com.ikatec.digisac:id/add_contact-input-internal_name'</msg>
+<status status="PASS" starttime="20220909 09:33:17.476" endtime="20220909 09:33:18.065"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>accessibility_id=com.ikatec.digisac:id/add-contact_input_name</arg>
+<arg>Teste</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:18.073" level="INFO">Typing text 'Teste' into text field 'accessibility_id=com.ikatec.digisac:id/add-contact_input_name'</msg>
+<status status="PASS" starttime="20220909 09:33:18.066" endtime="20220909 09:33:19.239"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>accessibility_id=com.ikatec.digisac:id/add-contact_input_alternative-name</arg>
+<arg>Teste</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:19.248" level="INFO">Typing text 'Teste' into text field 'accessibility_id=com.ikatec.digisac:id/add-contact_input_alternative-name'</msg>
+<status status="PASS" starttime="20220909 09:33:19.240" endtime="20220909 09:33:19.947"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>accessibility_id=com.ikatec.digisac:id/add_contact-input-number</arg>
+<arg>00000</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:19.955" level="INFO">Typing text '00000' into text field 'accessibility_id=com.ikatec.digisac:id/add_contact-input-number'</msg>
+<status status="PASS" starttime="20220909 09:33:19.947" endtime="20220909 09:33:21.112"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>accessibility_id=com.ikatec.digisac:id/add_contact-input-note</arg>
+<arg>Teste</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220909 09:33:21.118" level="INFO">Typing text 'Teste' into text field 'accessibility_id=com.ikatec.digisac:id/add_contact-input-note'</msg>
+<status status="PASS" starttime="20220909 09:33:21.113" endtime="20220909 09:33:21.803"/>
+</kw>
+<kw name="Close Session" library="base" type="TEARDOWN">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20220909 09:33:21.805" endtime="20220909 09:33:22.141"/>
+</kw>
+<status status="PASS" starttime="20220909 09:33:21.804" endtime="20220909 09:33:22.141"/>
+</kw>
+<status status="PASS" starttime="20220909 09:32:41.527" endtime="20220909 09:33:22.141"/>
+</test>
+<status status="PASS" starttime="20220909 09:32:41.361" endtime="20220909 09:33:22.143"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="addContacts">addContacts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
