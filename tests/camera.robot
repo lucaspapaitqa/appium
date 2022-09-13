@@ -15,16 +15,8 @@ Deve Apresentar Os Elementos
     Click Element                       id=com.ikatec.digisac:id/chat_attach_send-midia
     Wait Until Element Is Visible       id=com.ikatec.digisac:id/button-modal_attachment_camera_send-image
     Click Element                       id=com.ikatec.digisac:id/button-modal_attachment_camera_send-image
-    Wait Until Element Is Visible       id=com.ikatec.digisac:id/camera-button-camera_mode_toggle
-    Click Element                       id=com.ikatec.digisac:id/camera-button-camera_mode_toggle
-    Wait Until Element Is Visible       id=com.ikatec.digisac:id/camera-button-camera_type_toggle
-    Click Element                       id=com.ikatec.digisac:id/camera-button-camera_type_toggle 
-
-    #Wait Until Element Is Visible       id=com.ikatec.digisac:id/add_contact-button-save
-    #Wait Until Element Is Visible       accessibility_id=com.ikatec.digisac:id/add_contact-input-internal_name
-    #Wait Until Element Is Visible       accessibility_id=com.ikatec.digisac:id/add-contact_input_name
-    #Wait Until Element Is Visible       accessibility_id=com.ikatec.digisac:id/add-contact_input_alternative-name
-    #Wait Until Element Is Visible       accessibility_id=com.ikatec.digisac:id/add_contact-input-number
-    #Wait Until Element Is Visible       accessibility_id=com.ikatec.digisac:id/add_contact-input-note
-    #Wait Until Element Is Visible       id=com.ikatec.digisac:id/add-contact_wrapper_service
-    #Wait Until Element Is Visible       id=com.ikatec.digisac:id/modal_text_select   
+    Wait Until Element Is Visible       id=com.ikatec.digisac:id/camera-button-photo
+    Click Element                       id=com.ikatec.digisac:id/camera-button-photo 
+    Wait Until Element Is Visible       id=com.ikatec.digisac:id/send-image_camera_submit
+    Click Element                       id=com.ikatec.digisac:id/send-image_camera_submit
+    Wait Until Element Is Visible       id=com.ikatec.digisac:id/ticket_view_show 
